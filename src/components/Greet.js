@@ -1,3 +1,9 @@
 import React from 'react'
 
-export const Greet = () =><h1>Hello, There </h1>
+const Greet = (props) =>{
+   return(
+       <h1>Hello, There You are into {props.name} </h1>
+    )
+}
+
+export  default Greet
