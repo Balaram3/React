@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Greet from './components/Greet'
 import './App.css';
 import Display from './components/Display';
+import ArrayRendering from './components/ArrayRendering';
 class  App extends Component {
   render(){
   return (
@@ -9,6 +10,7 @@ class  App extends Component {
       
       <Greet name='Visitor' company='ThirdEye'></Greet>
       <Display/>
+      <ArrayRendering/>
     </div>
   )
   }
