@@ -1,5 +1,7 @@
 import React from 'react'
 import ElementMap from './ElementMap'
+import './styleSheets/regularStyles.css'
+import style from './styleSheets/myapp.module.css'
 function ArrayRendering (){
     let arrayData=[
         {
@@ -21,10 +23,13 @@ function ArrayRendering (){
             country:'SriLanka'
         }
     ]
-    let elems=arrayData.map(data=><ElementMap key={data.id} data={data}/>)
+    let nameData=['Nam-1','Nam-2','Nam-3']
+    let elems=nameData.map((data,index)=><h2 className='blueBG'key={index}>{data} </h2>)
     return(
         <div>
+
             {elems}
+            <h3 className={style.modularCss}>Module css canot be used in Child Components</h3>
         </div>
     )
 
