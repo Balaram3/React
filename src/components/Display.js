@@ -14,9 +14,9 @@ class Display extends Component{
         console.log('Button Clicked' +this.state.displayOn)
         this.setState(prevState=>({           
                 displayOn:!prevState.displayOn
-            }
+            },console.log('Button Clicked' +this.state.displayOn)
         ))
-        console.log('Button Clicked' +this.state.displayOn)
+        
     }
     render(){
         

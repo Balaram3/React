@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
-import Greet from './components/Greet'
 import './App.css';
-import Display from './components/Display';
-import ArrayRendering from './components/ArrayRendering';
+import LifecycleA from './components/LifecycleA';
 class  App extends Component {
   render(){
   return (
     <div className="App">
       
-      <Greet name='Visitor' company='ThirdEye'></Greet>
-      <Display/>
-      <ArrayRendering/>
+      <LifecycleA/>
+
     </div>
   )
   }
